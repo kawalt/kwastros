@@ -1,0 +1,236 @@
+#entirepage { 
+width:995px; 
+margin: auto; 
+} 
+
+body {
+		margin:0;
+		padding:0;
+		border:0;			/* This removes the border around the viewport in old versions of IE */
+		width:100%;
+		background:#fff;
+		min-width:600px;    	/* Minimum width of layout - remove line if not required */
+						/* The min-width property does not work in old versions of Internet Explorer */
+		font-size:90%;
+	}
+	a {
+		color:#369;
+	}
+	a:hover {
+		color:#fff;
+		background:#369;
+		text-decoration:none;
+	}
+	h1, h2, h3 {
+		margin:.8em 0 .2em 0;
+		padding:0;
+	}
+	p {
+		margin:.4em 0 .8em 0;
+		padding:0;
+	}
+	img {
+		margin:0px 0 1px;
+	}
+
+	/* Header styles */
+	#header {
+		clear:both;
+		float:left;
+		width:100%;	
+		
+	}
+	#header {
+		border-bottom:1px thin #000;
+		border-right:1px solid #000;
+		border-left:1px solid #000;
+		
+		
+	}
+	#header p,
+	#header h1,
+	#header h2 {
+		padding:.4em 15px 0 15px;
+		margin:0;
+		color: #003573;
+		font-family: tahoma;
+	}
+	#h3 {
+		text-decoration: underline;
+		font-family: verdana;
+		font-size: small;
+		text-align: center;
+	}
+	#h4 {
+		font-family: verdana;
+		font-size: 1.7ex;
+		text-align: center;
+		margin: 0;
+	}
+	
+	#h5 {
+			font-family: verdana;
+			font-size: 1.7ex;
+			text-align: left;
+			margin: 0;
+	}
+	
+	#h6 {
+			font-family: verdana;
+			font-size: small;
+			text-align: center;
+	}
+	#h7 {
+			font-family: verdana;
+			font-size: small;
+			text-align: left;
+			margin: 0;
+	}
+	#h8 {
+				font-family: verdana;
+				font-size: 1.4ex;
+				text-align: left;
+				margin: 0;
+	}
+	#h9 {
+			text-decoration: underline;
+			font-family: verdana;
+			font-size: small;
+			text-align: left;
+	}
+	#h10 {
+			font-family: verdana;
+			font-size: 1.7ex;
+			text-align: center;
+			margin: 0;
+			font-weight: bold
+	}
+	#h11 {
+			font-family: verdana;
+			font-size: 1.4ex;
+			text-align: center;
+			margin: 0;
+			text-decoration: underline;
+	}
+	#h12 {
+				font-family: verdana;
+				font-size: 1.4ex;
+				text-align: center;
+				margin: 0;
+	}
+	
+	#header ul {
+		width:100%;
+		list-style:none;
+		margin:1px 0 0 0;
+		padding:0;
+		font-family: arial;
+		
+	}
+	#header ul li {
+		display:inline;
+		list-style:none;
+		margin:0;
+		padding:0;
+		
+	}
+	#header ul li a {
+		display:block;
+		float:left;
+		margin:0 0 0 1px;
+		padding:2px 5px;
+		text-align:center;
+		background:#e6e5e5;
+		color:#000;
+		text-decoration:none;
+		position:relative;
+		left:15px;
+		line-height:1.3em;
+	}
+	#header ul li a:hover {
+		background:#6d0101;
+		color:#fff;
+	}
+	#header ul li a.active,
+	#header ul li a.active:hover {
+		color:#fff;
+		background:#000000;
+		font-weight:bold;
+	}
+	#header ul li a span {
+		display:block;
+	}
+	/* 'widths' sub menu */
+	#layoutdims {
+		clear:both;
+		background:#e6e5e5;
+		border-top:1px solid #000;
+		margin:0;
+		padding:0px 0px !important;
+		text-align:center;
+		
+	}
+
+	/* column container */
+	.colmask {
+		position:relative;	/* This fixes the IE7 overflow hidden bug */
+		clear:both;
+		float:left;
+		width:100%;			/* width of whole page */
+		overflow:hidden;		/* This chops off any overhanging divs */
+		border-left:1px solid;
+		border-right:1px solid;
+		
+	}
+	/* common column settings */
+	.colright,
+	.colmid,
+	.colleft {
+		float:left;
+		width:100%;
+		position:relative;
+	}
+	.col1,
+	.col2,
+	.col3 {
+		float:left;
+		position:relative;
+		padding:0 0 1em 0;
+		overflow:hidden;
+		text-align:center;
+
+	}
+	
+	/* 2 Column (right menu) settings */
+	.rightmenu {
+		background:#e6e5e5;		/* right column background colour */
+		
+	}
+	.rightmenu .colleft {
+		right:18%;			/* right column width */
+		background:#fff;		/* left column background colour */
+	}
+	.rightmenu .col1 {
+		width:78%;			/* left column content width (left column width minus left and right padding) */
+		left:20%;			/* (right column width) plus (left column left padding) */
+	}
+	.rightmenu .col2 {
+		width:16.5%;			/* right column content width (right column width minus left and right padding) */
+		left:23%;			/* (right column width) plus (left column left and right padding) plus (right column left padding) */
+	}
+	/* Footer styles */
+	#footer {
+		clear:both;
+		float:left;
+		width:100%;
+		border-top:1px solid #000;
+		text-align: right;
+	}
+	#footer p {
+		padding:10px;
+		margin:0;
+	}
+	td.selectedColor { background:#e6e5e5; }
+	tr.rowColor { background: #cef6f6; }
+	tr.headerColor { background: #e6e5e5; }
+	table.bgcolor { background: #ded9d9; }
